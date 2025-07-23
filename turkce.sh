@@ -1,5 +1,5 @@
 #!/bin/bash
-ALIAS_DOSYASI="$HOME/.turkce-terminal.sh"
+ALIAS_DOSYASI="$HOME/.turkce.sh"
 BASHRC="$HOME/.bashrc"
 ZSHRC="$HOME/.zshrc"
 
