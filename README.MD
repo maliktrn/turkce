@@ -9,7 +9,7 @@ Yeni başlayanlar için terminal komutları artık çok daha anlaşılır!
 
 Terminalde şu komutları sırayla çalıştır:
 
-```bash
-curl -O https://raw.githubusercontent.com/maliktrn/turkce/turkce.sh
-chmod +x turkce.sh
-./turkce.sh
+```git clone https://github.com/maliktrn/turkce
+cd turkce
+bash turkce.sh
+
