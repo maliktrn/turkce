@@ -1,14 +1,14 @@
 #!/bin/bash
+
 ALIAS_DOSYASI="$HOME/.turkce.sh"
 BASHRC="$HOME/.bashrc"
 ZSHRC="$HOME/.zshrc"
 
-echo "🔧 Türkçe terminal komutları kuruluyor... Lütfen bekleyiniz..."
+echo "🔧 Türkçe terminal komutları kuruluyor..."
 
 cat <<'EOL' > "$ALIAS_DOSYASI"
 # Türkçe terminal komutları ve fonksiyonları
 
-# ---- Fonksiyonlar ----
 göster() {
   local args=()
   for arg in "$@"; do
@@ -25,7 +25,6 @@ göster() {
   command ls "${args[@]}"
 }
 
-# ---- Alias’lar ----
 alias gir='cd'
 alias nerdeyim='pwd'
 alias kimimben='whoami'
@@ -73,14 +72,12 @@ alias çevre='env'
 alias sistem_bilgi='uname -a'
 EOL
 
-# dikkat! kodun burdan sonrası kalıcı yapar eğer kalıcı olmasını istemiyorsanız kodun burdan sonrasını silerek tek seferlik deneyebilirsiniz 
-# ama terminal açılıp kapandığında komut çalışmaz tekrar çalıştırmak için tekrar kurulum yapmanız gerekiyor
 for shellrc in "$BASHRC" "$ZSHRC"; do
-  if [ -f "$shellrc" ] && ! grep -Fxq "source \$HOME/.turkce-terminal.sh" "$shellrc"; then
+  if [ -f "$shellrc" ] && ! grep -Fxq "source \$HOME/.turkce.sh" "$shellrc"; then
     echo "source \$HOME/.turkce.sh" >> "$shellrc"
     echo "✅ $shellrc dosyasına eklendi"
   fi
 done
 
 echo "✅ Kurulum tamamlandı!"
-echo "ℹ️  Artık tüm komutlar Türkçeleştirildi isterseniz oku kılavuz.txt komutu ile kılavuzda yazan komutları kullanmaya başlayabilirsiniz."
+echo "ℹ️ Terminali yeniden başlat veya 'source ~/.bashrc' yazarak Türkçe komutları kullanmaya başla."
