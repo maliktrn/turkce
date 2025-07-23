@@ -1,0 +1,27 @@
+| Türkçe Komut                | Ne Yapar?                           | Orijinal Komut / Parametreler            |
+| --------------------------- | ----------------------------------- | ---------------------------------------- |
+| `göster`                    | Dizin içeriğini listeler            | `ls`                                     |
+| `göster -tümü`              | Gizli dosyalar dahil listeler       | `ls -a`                                  |
+| `göster -uzun`              | Uzun liste formatı gösterir         | `ls -l`                                  |
+| `gir Belgeler`              | Klasöre girer                       | `cd Belgeler`                            |
+| `nerdeyim`                  | Bulunduğun dizini gösterir          | `pwd`                                    |
+| `kimimben`                  | Kullanıcı adını gösterir            | `whoami`                                 |
+| `kiminle`                   | Kullanıcının gruplarını listeler    | `groups`                                 |
+| `klasöroluştur yeni_klasör` | Yeni klasör oluşturur               | `mkdir yeni_klasör`                      |
+| `sil dosya.txt`             | Dosya siler (onay sorar)            | `rm -i dosya.txt`                        |
+| `sil_r klasör`              | Klasör ve içeriğini siler           | `rm -r klasör`                           |
+| `kopyala dosya hedef/`      | Dosyayı kopyalar                    | `cp dosya hedef/`                        |
+| `taşı eski yeni`            | Dosya/klasörü taşır                 | `mv eski yeni`                           |
+| `düzenle dosya`             | Dosyayı nano ile açar               | `nano dosya`                             |
+| `temizle`                   | Terminal ekranını temizler          | `clear`                                  |
+| `çık`                       | Terminalden çıkar                   | `exit`                                   |
+| `ağaç`                      | Dizin yapısını ağaç olarak gösterir | `tree`                                   |
+| `durum`                     | Sistem kaynaklarını gösterir        | `top`                                    |
+| `yükle paket`               | Paket yükler                        | `sudo apt install paket`                 |
+| `kaldır paket`              | Paket kaldırır                      | `sudo apt remove paket`                  |
+| `güncelle`                  | Sistemi günceller                   | `sudo apt update && sudo apt upgrade -y` |
+| `disk_kullanımı`            | Disk kullanımını gösterir           | `df -h`                                  |
+| `klasör_kullanımı`          | Klasör disk kullanımını gösterir    | `du -sh *`                               |
+| `sistem_bilgi`              | Sistem bilgisini gösterir           | `uname -a`                               |
+| `bekle 5`                   | 5 saniye bekler                     | `sleep 5`                                |
+| `zaman`                     | Şimdiki zamanı gösterir             | `date`                                   |
