@@ -9,7 +9,8 @@ Yeni başlayanlar için terminal komutları artık çok daha anlaşılır!
 
 Terminalde şu komutları sırayla çalıştır:
 
-```git clone https://github.com/maliktrn/turkce
+```
+git clone https://github.com/maliktrn/turkce
 cd turkce
 bash turkce.sh
 
