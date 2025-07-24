@@ -34,7 +34,7 @@ cat <<EOL > "$ALIAS_DOSYASI"
 # Türkçe terminal alias ve fonksiyonları
 
 yardım() {
-  cat "\$HOME/kılavuz.txt"
+  cat "\$HOME/turkce/kılavuz.txt"
 }
 
 göster() {
