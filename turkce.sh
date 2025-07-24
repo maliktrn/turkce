@@ -54,7 +54,7 @@ göster() {
 }
 
 alias gir='cd'
-alias nerdeyim='pwd'
+alias neredeyim='pwd'
 alias kimimben='whoami'
 alias kiminle='groups'
 alias klasöroluştur='mkdir'
