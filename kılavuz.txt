@@ -1,0 +1,85 @@
+📘 Türkçe Terminal Kılavuzu
+============================
+
+Bu sistem, terminal komutlarını Türkçeleştirerek günlük işlemleri daha anlaşılır ve akılda kalıcı hale getirir.
+Aşağıda kullanabileceğiniz komutlar ve anlamları listelenmiştir:
+
+┌───────────────────────────────┬────────────────────────────────────────────┬───────────────────────────────────────┐
+│ Türkçe Komut                 │ Açıklama                                   │ Orijinal Komut / Parametre            │
+├───────────────────────────────┼────────────────────────────────────────────┼───────────────────────────────────────┤
+│ gir klasör                   │ Belirtilen klasöre geçiş yapar             │ cd klasör                             │
+│ nerdeyim                     │ Şu anki dizini gösterir                    │ pwd                                   │
+│ kimimben                     │ Kullanıcı adını yazdırır                   │ whoami                                │
+│ kiminle                      │ Kullanıcının grup bilgilerini gösterir     │ groups                                │
+│ klasöroluştur yeni_klasör    │ Yeni klasör oluşturur                      │ mkdir yeni_klasör                     │
+│ klasörsil hedef              │ Boş klasörü siler                          │ rmdir hedef                           │
+│ sil dosya                    │ Dosyayı siler (onaylı)                     │ rm -i dosya                           │
+│ silr klasör                  │ Dolu klasörü ve içeriğini siler            │ rm -r klasör                          │
+│ kopyala kaynak hedef         │ Dosyayı veya klasörü kopyalar              │ cp kaynak hedef                       │
+│ taşı kaynak hedef            │ Dosya veya klasörü taşır / yeniden adlandır│ mv kaynak hedef                       │
+│ dosyayaz isim.txt            │ Yeni dosya oluşturur                       │ touch isim.txt                        │
+│ düzenle dosya.txt            │ Dosyayı nano ile düzenler                  │ nano dosya.txt                        │
+│ temizle                      │ Terminal ekranını temizler                 │ clear                                 │
+│ çık                          │ Oturumu veya terminali kapatır             │ exit                                  │
+│ göster                       │ Dizin içeriğini listeler                   │ ls                                    │
+│ göster -tümü                │ Gizli dosyalar dahil gösterir             │ ls -a                                 │
+│ göster -uzun                │ Detaylı listeleme yapar                    │ ls -l                                 │
+│ göster -tarihegöre -ters    │ Dosyaları tarihe göre ters sırayla dizer   │ ls -ltr                               │
+│ göster -boyut               │ Dosyaları boyuta göre sıralar              │ ls -S                                 │
+│ ağaç                         │ Klasörleri ağaç şeklinde gösterir          │ tree                                  │
+│ durum                        │ Anlık sistem yükünü gösterir               │ top                                   │
+
+🔧 Sistem ve Paket Yönetimi:
+─────────────────────────────
+│ yükle paket                  │ Paket yükler                               │ yönetici apt/pacman/dnf install paket │
+│ kaldır paket                │ Paketi kaldırır                            │ yönetici remove                       │
+│ güncelle                     │ Sistemi günceller                          │ yönetici update && upgrade            │
+│ paketkontrol                 │ Kurulu paketleri listeler                  │ dpkg -l / pacman -Q / rpm -qa         │
+
+💽 Disk ve Dosya İşlemleri:
+─────────────────────────────
+│ diskkullanımı               │ Diskin doluluk oranını gösterir            │ df -h                                 │
+│ klasörkullanımı             │ Klasörlerin ne kadar yer kapladığını göster│ du -sh *                              │
+│ değiştirmod dosya 755       │ Dosya izinlerini değiştirir                │ chmod 755 dosya                       │
+│ sahipol user dosya          │ Dosyanın sahibini değiştirir               │ chown user dosya                      │
+│ linkyap kaynak hedef        │ Sembolik link oluşturur                    │ ln -s kaynak hedef                    │
+
+🧮 Sayı & İçerik Komutları:
+─────────────────────────────
+│ oku dosya                   │ Dosyanın içeriğini okur                    │ cat dosya                             │
+│ ilk dosya                   │ İlk 10 satırı gösterir                     │ head dosya                            │
+│ son dosya                   │ Son 10 satırı gösterir                     │ tail dosya                            │
+│ satırsay dosya              │ Satır sayısını verir                       │ wc -l dosya                           │
+│ kelimesay dosya             │ Kelime sayısını verir                      │ wc -w dosya                           │
+│ baytsay dosya               │ Bayt (dosya boyutu) sayısını verir         │ wc -c dosya                           │
+│ sırala dosya                │ Satırları sıralar                          │ sort dosya                            │
+│ eşsiz dosya                 │ Yinelenmeyen satırları gösterir            │ uniq dosya                            │
+
+🔍 Metin İşleme:
+─────────────────────────────
+│ ara 'metin' dosya           │ Belirli metni içinde arar                  │ grep 'metin' dosya                    │
+│ değiştir 'eski/yeni' dosya  │ Metni başka bir metinle değiştirir         │ sed 's/eski/yeni/g' dosya             │
+│ dönüştür a-z A-Z            │ Karakterleri dönüştürür (büyük/küçük harf) │ tr a-z A-Z                            │
+
+🔐 Hash & Kontrol:
+─────────────────────────────
+│ md5 dosya                   │ MD5 kontrol toplamını verir                │ md5sum dosya                          │
+│ sha1 dosya                  │ SHA-1 hash değeri                          │ sha1sum dosya                         │
+│ sha256 dosya                │ SHA-256 hash değeri                        │ sha256sum dosya                       │
+
+🛠️ Yardımcı Komutlar:
+─────────────────────────────
+│ parçala dosya -b 1M         │ Dosyayı 1MB parçalara böler                │ split -b 1M dosya                     │
+│ bekle 5                     │ 5 saniye bekler                            │ sleep 5                               │
+│ zaman                       │ Şu anki tarihi/saat bilgisi                │ date                                  │
+│ arkaplan komut              │ Komutu arka planda çalıştırır              │ nohup komut &                         │
+│ çevre                       │ Ortam değişkenlerini gösterir             │ env                                   │
+│ sistembilgi                 │ Sistem ve çekirdek bilgisi verir           │ uname -a                              │
+│ yardım                      │ Bu kılavuzu gösterir                       │ cat \$HOME/kılavuz.txt                │
+
+📌 Notlar:
+- `yönetici` ifadesi `sudo` yerine kullanılmıştır.
+- Bazı parametreler kısa yerine Türkçeye çevrilmiş şekliyle yazılmıştır.
+- Bu sistem sadece komutları daha kolay hatırlanır hale getirir, eski komutlar da çalışmaya devam eder.
+
+Terminali kapatıp açtıktan sonra komutları kullanabilirsiniz.
