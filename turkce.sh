@@ -96,6 +96,7 @@ alias dönüştür='tr'
 alias bekle='sleep'
 alias zaman='date'
 alias arkaplan='nohup'
+alias çalıştır= 'bash'
 alias çevre='env'
 alias sistembilgi='uname -a'
 EOL
